@@ -1,0 +1,29 @@
+/*
+ Theme Name:   Pawitra - A Divi Child Theme
+ Theme URI:    http://www.elegantthemes.com/gallery/divi/
+ Description:  Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+ Author:       Aditia A. Pratama
+ Author URI:   http://github.com/aditiapratama
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
+*/
+
+@media only screen and ( min-width:981px ) {
+    /* Set the slider height */
+    .my-slider, .my-slider .et_pb_container {
+        height: 638px !important;
+    }
+    .my-slider, .my-slider .et_pb_slide {
+        max-height: 638px;
+    }
+    .my-slider .et_pb_slide_description {
+        position: relative;
+        top: 35%;
+        padding-top: 0 !important;
+        padding-bottom:0 !important;
+        height:auto !important;
+    }
+}
