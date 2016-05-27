@@ -15,6 +15,30 @@
     top: -50px;
 }
 
+.contact-map .container {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    /*display: inline-block;*/
+    margin-top: -142px;
+    top: -192px;
+}
+
+.contact-map .container h2 {
+    color: white;
+}
+
+.contact-map .container h5 {
+    color: white;
+}
+
+.contact-map .map-holder {
+    background: #f2a057;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 @media only screen and ( min-width:981px ) {
     /* Set the slider height */
     .my-slider, .my-slider .et_pb_container {
