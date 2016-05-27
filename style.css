@@ -16,19 +16,41 @@
 }
 
 .contact-map .container {
-    position: relative;
+    position: absolute;
     text-align: center;
     z-index: 2;
-    /*display: inline-block;*/
-    margin-top: -142px;
-    top: -192px;
+    display: block;
+    bottom: 170px;
+    left: 15%;
+    margin-left: -80px;
+    /*margin-top: -162px;*/
+    /*top: -192px;*/
 }
 
 .contact-map .container h2 {
     color: white;
+    font-size: 46px;
 }
 
 .contact-map .container h5 {
+    color: white;
+    font-size: 28px;
+}
+
+.contact-map {
+    text-align: center;
+}
+
+.contact-map .map-toggle {
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.contact-map .map-toggle h6 {
     color: white;
 }
 
