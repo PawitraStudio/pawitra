@@ -10,11 +10,22 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
 */
+
 .logo-header img {
     position: relative;
     top: -50px;
 }
-
+.contact-map .map-holder {
+    overflow: hidden;
+}
+.contact-map .map-holder:before {
+    content: '';
+    background: #f2a057;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
 .contact-map .container {
     position: absolute;
     text-align: center;
@@ -23,45 +34,37 @@
     bottom: 170px;
     left: 15%;
     margin-left: -80px;
+    transition: all 0.3s ease;
+    opacity: 1;
     /*margin-top: -162px;*/
     /*top: -192px;*/
 }
-
 .contact-map .container h2 {
     color: white;
     font-size: 46px;
 }
-
 .contact-map .container h5 {
     color: white;
     font-size: 28px;
 }
-
-.contact-map {
-    text-align: center;
+.contact-map .switch {
+    padding: 10px;
+    vertical-align: middle;
 }
-
 .contact-map .map-toggle {
     text-align: center;
     position: absolute;
-    display: inline-block;
+    /*display: inline-block;*/
     bottom: 40px;
     left: 50%;
     margin-left: -50px;
 }
-
 .contact-map .map-toggle h6 {
     color: white;
 }
 
-.contact-map .map-holder {
-    background: #f2a057;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
-@media only screen and ( min-width:981px ) {
+@media only screen and ( min-width:981px) {
     /* Set the slider height */
     .my-slider, .my-slider .et_pb_container {
         height: 638px !important;
@@ -73,7 +76,7 @@
         position: relative;
         top: 35%;
         padding-top: 0 !important;
-        padding-bottom:0 !important;
-        height:auto !important;
+        padding-bottom: 0 !important;
+        height: auto !important;
     }
 }
