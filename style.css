@@ -15,29 +15,43 @@
     position: relative;
     top: -50px;
 }
-.contact-map .map-holder {
-    overflow: hidden;
+.contact-map {
+    background: rgba(69, 90, 100, 1);
 }
-.contact-map .map-holder:before {
-    content: '';
-    background: #f2a057;
-    top: 0;
-    left: 0;
-    opacity: 0.85;
-    transition: all 0.3s ease;
+.contact-map.toggle-active {
+    background: rgba(0, 0, 0, 0);;
+}
+.contact-map .map-holder {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
 }
 .contact-map .container {
     position: absolute;
     text-align: center;
     z-index: 2;
     display: block;
-    bottom: 170px;
-    left: 15%;
-    margin-left: -80px;
+    bottom: 50%;
+    left: 12%;
     transition: all 0.3s ease;
     opacity: 1;
-    /*margin-top: -162px;*/
-    /*top: -192px;*/
+}
+.contact-map.toggle-active .container {
+    opacity: 0;
+    z-index: -1;
+}
+.contact-map.toggle-active .map-holder {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    filter: grayscale(5%);
+    -moz-filter: grayscale(5%);
+    -ms-filter: grayscale(5%);
+    -o-filter: grayscale(5%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(5%);
 }
 .contact-map .container h2 {
     color: white;
@@ -47,23 +61,52 @@
     color: white;
     font-size: 28px;
 }
-.contact-map .switch {
-    padding: 10px;
-    vertical-align: middle;
-}
 .contact-map .map-toggle {
+    display: inline-block;
+    margin: 0 auto;
     text-align: center;
     position: absolute;
-    /*display: inline-block;*/
+    width: 150px;
     bottom: 40px;
     left: 50%;
     margin-left: -50px;
 }
+.contact-map .map-toggle .switch {
+    border: 1px solid #fff;
+    width: 45px;
+    height: 25px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    margin-bottom: 4px;
+}
+.contact-map .map-toggle .switch:before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50px;
+    background: #fff;
+    left: 1px;
+    top: 1px;
+    transition: all 0.3s ease;
+}
 .contact-map .map-toggle h6 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-right: 2px;
     color: white;
 }
+.contact-map .map-toggle .switch.toggle-active:before {
+    transform: translate(20px);
+}
+@media all and (max-width:767px){
+    .contact-map {
+        padding: 160px 0;
 
-
+}
 @media only screen and ( min-width:981px) {
     /* Set the slider height */
     .my-slider, .my-slider .et_pb_container {
