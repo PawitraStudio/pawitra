@@ -7,17 +7,4 @@ function divi_enqueue_styles() {
     wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/scripts.js' );
 
 }
-
-add_action ( 'et_header_top', 'divi_child_preloader' );
-function divi_child_preloader() {
-    ?>
-    <div class="preloader">
-        <div class="spinner">
-            <div class="pre-bounce1"></div>
-            <div class="pre-bounce2"></div>
-        </div>
-    </div>
-    <?php
-}
-
 ?>
