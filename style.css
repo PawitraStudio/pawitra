@@ -10,9 +10,15 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
 */
-.logo-header img {
+.logo-img {
     position: relative;
-    top: -50px;
+    width: 100%;
+}
+.logo-img img {
+    position: absolute;
+    width: 400px;
+    left: 35%;
+    margin-top: 10%;
 }
 /*All About Map*/
 .contact-map {
