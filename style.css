@@ -10,16 +10,6 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
 */
-.logo-img {
-    position: relative;
-    width: 100%;
-}
-.logo-img img {
-    position: absolute;
-    width: 400px;
-    left: 35%;
-    margin-top: 10%;
-}
 /*All About Map*/
 .contact-map {
     background-color: #455A64;
@@ -128,6 +118,30 @@
         opacity: 1!important;
     }
 }
+.intern-cta {
+    position: relative;
+    display: block;
+    bottom: 40px;
+    text-align: center;
+    /*background-color: #EEEEEE!important;*/
+    padding: 20px!important;
+    border-radius: 5px!important;
+}
+.intern-cta .glyphicon {
+    font-size: 5.2em;
+    color: #607D8B;
+}
+.intern-cta h1 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+}
+.intern-cta p {
+    font-size: 16px;
+    font-family: "Roboto Condensed";
+    line-height: 1.5em;
+}
 /*Full width footer bar*/
 #footer-bottom .container {
     margin-right: 2.773%;
@@ -144,6 +158,36 @@
 #footer-bottom .glyphicon-headphones {
     color: orange;
 }
+@media all and (max-width:980px) {
+    .et_header_style_left #logo,
+    .et_header_style_split #logo {
+        visibility: hidden;
+    }
+
+    .et_header_style_split #main-header .mobile_nav {
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+        background-color: #757575;
+        padding: 10px 10px;
+        text-align: center;
+        /*left: 50%;*/
+        /*width: 50%;*/
+    }
+    .et_header_style_split #main-header .mobile_nav .select_page {
+        /*visibility: hidden;*/
+    }
+    .mobile_menu_bar:before {
+        font-size: 64px;
+        /*color: white;*/
+    }
+    .intern-cta {
+        top: 10px;
+    }
+}
+
 @media only screen and (min-width:981px) {
     /* Set the slider height */
     .my-slider, .my-slider .et_pb_container {
