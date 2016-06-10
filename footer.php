@@ -37,12 +37,12 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 					}
 				?>
 
-						<p id="footer-info"><?php printf( et_get_safe_localization( __( 'Made with %1$s and %2$s from Bandung, Indonesia', 'Divi' ) ), '<span class="glyphicon glyphicon-heart text-danger" aria-hidden="true"></span>', '<span class="glyphicon glyphicon-headphones text-danger" aria-hidden="true"></span>'); ?>
+						<p id="footer-info"><?php printf( et_get_safe_localization( __( 'Made with %1$s and %2$s from Bandung, Indonesia', 'Divi' ) ), '<span class="fa fa-heart text-danger" aria-hidden="true"></span>', '<span class="fa fa-headphones text-danger" aria-hidden="true"></span>'); ?>
                         <br>&copy; <?php
                                     $fromYear = 2013;
                                     $thisYear = (int)date('Y');
                                     echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?>
-                        <?php printf( et_get_safe_localization( __( ' PT. Pawitra Media Nuswantara' ) ), '<span class="glyphicon glyphicon-heart text-danger" aria-hidden="true"></span>', '<span class="glyphicon glyphicon-headphones text-danger" aria-hidden="true"></span>'); ?>
+                        <?php printf( et_get_safe_localization( __( ' PT. Pawitra Media Nuswantara' ) ), '<span class="fa fa-heart text-danger" aria-hidden="true"></span>', '<span class="fa fa-headphones text-danger" aria-hidden="true"></span>'); ?>
                         </p>
 					</div>	<!-- .container -->
 				</div>
