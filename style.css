@@ -23,15 +23,9 @@
 .fa-li {
     top: 0px !important;
 }
-.icon-python .et_pb_main_blurb_image {
-  display: none;
-}
-.icon-python h4 {
-  margin-top: 30px;
-}
-.icon-python {
-  font-size: 48px;
-}
+/*-------------------------------*/
+/* HEADER CONTEXT                */
+/*-------------------------------*/
 #main-header {
   -webkit-box-shadow:none !important;
   -moz-box-shadow:none !important;
@@ -39,7 +33,11 @@
 }
 .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content img {
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
+}
+.et_pb_fullwidth_header .et_pb_fullwidth_header_scroll a .et-pb-icon {
+  position: relative;
+  bottom: 100px;
 }
 .main-nav {
   background-color: rgba(69, 90, 100, 0.85)!important;
@@ -179,14 +177,24 @@
     line-height: 1.5em;
 }
 /*Full width footer bar*/
-#footer-bottom .container {
+/*#footer-bottom .container {
     margin-right: 2.773%;
     margin-left: 2.773%;
     width:94.454%!important;
     max-width: 94.454%;
-}
+}*/
 #footer-bottom .container p {
     font-weight: 200;
+    font-size: 14px;
+}
+#footer-bottom .container .top-text {
+    color: #fafafa;
+    font-size: 11px;
+    font-weight: 200;
+    /*margin: 0 auto;*/
+    float: left;
+    padding-bottom: 10px;
+    text-align: left;
 }
 #footer-bottom .fa-heart {
     color: red;
@@ -236,10 +244,10 @@
 @media only screen and (min-width:981px) {
     /* Set the slider height */
     .my-slider, .my-slider .et_pb_container {
-        height: 638px !important;
+        height: 678px !important;
     }
     .my-slider, .my-slider .et_pb_slide {
-        max-height: 638px;
+        max-height: 678px;
     }
     .my-slider .et_pb_slide_description {
         position: relative;
