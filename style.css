@@ -51,7 +51,6 @@
 .contact-map .toggle-active {
     background-color: transparent;
 }
-
 .contact-map .map-holder {
     filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
     filter: grayscale(100%);
@@ -152,6 +151,28 @@
         opacity: 1!important;
     }
 }
+.quote-cta {
+  position: relative;
+  display: block;
+  bottom: 5px;
+  text-align: center;
+  padding: 20px!important;
+}
+.quote-cta .fa {
+    font-size: 5.2em;
+    color: #607D8B;
+}
+.quote-cta h1 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+}
+.quote-cta p {
+    font-size: 16px;
+    font-family: "Roboto Condensed";
+    line-height: 1.5em;
+}
 .intern-cta {
     position: relative;
     display: block;
@@ -176,6 +197,25 @@
     font-family: "Roboto Condensed";
     line-height: 1.5em;
 }
+#main-footer {
+  -webkit-box-shadow:none !important;
+  -moz-box-shadow:none !important;
+  box-shadow:none !important;
+}
+#footer-bottom .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.social-footer .fa {
+  color: #fff;
+}
+.social-footer .fa-stack {
+  font-size: 48px!important;
+}
+.social-footer .fa-stack:hover .fa {
+  transition: all 0.5s ease;
+  color: #FFC107;
+}
 /*Full width footer bar*/
 /*#footer-bottom .container {
     margin-right: 2.773%;
@@ -186,15 +226,6 @@
 #footer-bottom .container p {
     font-weight: 200;
     font-size: 14px;
-}
-#footer-bottom .container .top-text {
-    color: #fafafa;
-    font-size: 11px;
-    font-weight: 200;
-    /*margin: 0 auto;*/
-    float: left;
-    padding-bottom: 10px;
-    text-align: left;
 }
 #footer-bottom .fa-heart {
     color: red;
@@ -236,9 +267,17 @@
   #et-info, #et-secondary-menu {
     text-align: left;
   }
+  .quote-cta{
+    bottom: 40px;
+  }
   .intern-cta{
-    top: 50px;
-
+    top: 0;
+  }
+  .social-footer .fa-stack {
+    font-size: 24px!important;
+  }
+  #footer-bottom .container p{
+    font-size: 11px;
   }
 }
 @media only screen and (min-width:981px) {
