@@ -233,6 +233,131 @@
 #footer-bottom .fa-headphones {
     color: orange;
 }
+/* === [www.divilicious.com Style As CF7 =========================== */
+.et_pb_contact p input, .et_pb_contact p textarea {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+.et_pb_contact p input, .et_pb_contact p textarea{
+  background-color: rgba(221,221,221,0.4);
+}
+input.wysija-input{
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	background-color: rgba(221,221,221,0.4);
+    border: none;
+    width: 100%;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 14px;
+    color: #999;
+    padding: 16px;
+}
+.wpcf7-text, .wpcf7-textarea, .wpcf7-captchar {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2em;
+  background-color: rgba(221,221,221,0.4) !important;
+	border: none !important;
+	width: 100% !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	font-size: 14px;
+	color: #555 !important;
+	padding: 16px !important;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+div.wpcf7 select {
+  background-color: rgba(221,221,221,0.4) !important;
+  border: none !important;
+  width: 100% !important;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  font-size: 14px;
+  color: #555 !important;
+  padding: 0 !important;
+  min-height: 48px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+span.wpcf7-checkbox span.wpcf7-list-item { display: block; }
+span.wpcf7-radio span.wpcf7-list-item { display: inline; }
+input.wpcf7-submit {
+	color: inherit !important;
+	margin: 8px auto 0;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 500;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0.3em 1em;
+	float: right;
+	line-height: 1.7em;
+	background: transparent;
+	border: 2px solid;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+input.wpcf7-submit:hover {
+	background-color: rgba(0,0,0,0.05);
+	border: 2px solid transparent;
+	padding: 0.3em 1em !important;
+}
+input.wpcf7-submit:after {
+    font-family: 'ETmodules';
+	content: "\35";
+    font-size: 32px;
+    opacity: 0;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 32px;
+    line-height: 1em;
+    position: absolute;
+    margin-left: -0.5em;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+input.wpcf7-submit:hover:after {
+    opacity: 1;
+    display: block;
+    font-family: 'ETmodules';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    right: 0px;
+    top: 5px;
+    margin-left: 0;
+}
+.contact-form .prefix {
+  display: inline;
+  float: right;
+  position: relative;
+  color: #555!important;
+  font-size: 16px;
+  bottom: 50px;
+  right: 96%;
+}
+input.budget {
+  padding-left: 35px!important;
+}
 @media all and (max-width:980px) {
   .et_header_style_centered header#main-header .logo_container {
     display: none;
