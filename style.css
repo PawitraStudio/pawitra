@@ -33,12 +33,12 @@
 }
 .et_pb_fullwidth_header .et_pb_fullwidth_header_container.center .header-content img {
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
 }
-.et_pb_fullwidth_header .et_pb_fullwidth_header_scroll a .et-pb-icon {
+/*.et_pb_fullwidth_header .et_pb_fullwidth_header_scroll a .et-pb-icon {
   position: relative;
-  bottom: 100px;
-}
+  bottom: 50px;
+}*/
 .main-nav {
   background-color: rgba(69, 90, 100, 0.85)!important;
 }
@@ -358,6 +358,19 @@ input.wpcf7-submit:hover:after {
 input.budget {
   padding-left: 35px!important;
 }
+.email-optin {
+  border-radius: 5px;
+}
+.email-optin .fa {
+  position: relative;
+  top: 15px;
+}
+.email-optin .desc  {
+  padding: 10px 60px;
+}
+.et_pb_signup_0 input[type="text"], .et_pb_signup_0 textarea {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
 @media all and (max-width:980px) {
   .et_header_style_centered header#main-header .logo_container {
     display: none;
@@ -372,7 +385,7 @@ input.budget {
   .et_header_style_centered #main-header .mobile_nav {
     background-color: transparent;
     position: relative;
-    bottom: 30px;
+    bottom: 25px;
     right: 0;
   }
   .mobile_menu_bar:before {
