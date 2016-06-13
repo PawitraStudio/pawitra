@@ -412,10 +412,33 @@ input.budget {
     top: 0;
   }
   .social-footer .fa-stack {
+    /*display: block;*/
     font-size: 24px!important;
+    /*padding: 0 20px;*/
+  }
+  .social-footer span {
+    /*display: inline-block;*/
+    margin: .15em .2em;
+  }
+  .social-footer {
+    position: relative;
+    bottom: 50px;
   }
   #footer-bottom .container p{
     font-size: 11px;
+  }
+  .email-optin .desc  {
+    padding: 20px 0;
+  }
+
+}
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+  .et_pb_column .et_pb_newsletter_form,
+  .et_pb_column.et_pb_column_inner .et_pb_newsletter_form {
+    position: relative;
+    top: 50px;
+    right:10px;
   }
 }
 @media only screen and (min-width:981px) {
