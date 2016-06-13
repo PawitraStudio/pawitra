@@ -306,7 +306,7 @@ input.wpcf7-submit {
 	transition: all 0.2s;
 }
 input.wpcf7-submit:hover {
-	background-color: rgba(0,0,0,0.05);
+	background-color: #CFD8DC;
 	border: 2px solid transparent;
 	padding: 0.3em 1em !important;
 }
@@ -407,7 +407,7 @@ input.budget {
 }
 @media only screen and (min-width:981px) {
     /* Set the slider height */
-    .my-slider, .my-slider .et_pb_container {
+    /*.my-slider, .my-slider .et_pb_container {
         height: 678px !important;
     }
     .my-slider, .my-slider .et_pb_slide {
@@ -419,5 +419,5 @@ input.budget {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         height: auto !important;
-    }
+    }*/
 }
