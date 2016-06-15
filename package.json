@@ -1,0 +1,24 @@
+{
+  "name": "pawitra_divi_child_theme",
+  "version": "1.0.0",
+  "description": "Gulp setup for Divi child theme.",
+  "author": "Aditia A. Pratama <aditia@pawitra.id>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pawitrastudio/pawitra"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "~3.9.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-rename":"^1.0.3",
+    "gulp-watch":"^4.3.5",
+    "gulp-plumber": "^0.6.6",
+    "gulp-jshint": "^2.0.1",
+    "gulp-notify": "^2.2.0",
+    "jshint": "^2.9.2"
+  }
+}
