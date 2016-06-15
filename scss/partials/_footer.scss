@@ -1,0 +1,47 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+#main-footer {
+  @include box-shadow;
+}
+
+#footer-bottom {
+  .container {
+    margin: {
+      top: 10px;
+      bottom: 10px;
+    }
+
+    p {
+      font: {
+        weight: 200;
+        size: 14px;
+      }
+    }
+  }
+
+  .fa-heart {
+    color: red;
+  }
+
+  .fa-headphones {
+    color: orange;
+  }
+}
+
+.social-footer {
+  .fa {
+    color: $color-text;
+  }
+
+  .fa-stack {
+    font-size: 48px !important;
+
+    &:hover {
+      .fa {
+        transition: $transition-ease;
+        color: $color-accent;
+      }
+    }
+  }
+}

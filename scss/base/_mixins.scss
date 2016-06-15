@@ -1,0 +1,25 @@
+@mixin cta-main {
+  position: relative;
+  display: block;
+  bottom: 5px;
+  text-align: center;
+  padding: 20px !important;
+}
+
+@mixin cta-fa($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin cta-font($size:null, $weight:null, $height:null, $space:null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $space;
+}
+
+@mixin box-shadow {
+  box-shadow: none !important;
+  -webkit-box-shadow:none !important;
+  -moz-box-shadow:none !important;
+}
