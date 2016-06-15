@@ -17,8 +17,70 @@
 // Mixins
 @import "base/mixins";
 /* Body */
-
 body {}
+.fa {
+  line-height: inherit !important;
+  &-ul {
+    list-style-type: none !important;
+  }
+  &-li {
+    top: 0px !important;
+  }
+}
+
+.contact-map {
+  background-color: $color-dark-opaque;
+  &.toggle-active {
+    background-color: transparent;
+    .container {
+      opacity: 0;
+      z-index: -1;
+    }
+    .map-holder {
+      filter: $filter-url;
+      filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      opacity: 1!important;
+    }
+  }
+  .map-holder {
+    filter: $filter-url;
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+  }
+  .container {
+    display: block;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    bottom: 40%;
+    left: 9%;
+    transition: $transition-ease;
+    opacity: 1;
+
+    h2 {
+      color: $color-text;
+      margin-bottom: 10px;
+      font: {
+        weight: 400;
+        size: 48px
+      }
+    }
+
+    h5 {
+      color: $color-text;
+      font: {
+        weight: 300;
+        size: 32px;
+      }
+    }
+  }
+}
+
 /* Header */
 
 @import "partials/header";

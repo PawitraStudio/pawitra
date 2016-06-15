@@ -48,7 +48,11 @@
 }
 /* Main Header */
 
-#main-header {}
+#main-header {
+  -webkit-box-shadow:none !important;
+  -moz-box-shadow:none !important;
+  box-shadow: none !important;
+}
 
 .logo_container {
     .logo_helper {}

@@ -1,9 +1,10 @@
 /*=== Gulp Plugins ===*/
 
 var gulp         = require('gulp');
-var browserSync  = require('browser-sync'),
-var reload       = browserSync.reload,
-var url          = 'pawitrastudio.dev'
+			browserSync  = require('browser-sync'),
+			reload       = browserSync.reload,
+			url          = 'pawitrastudio.dev'
+
 var autoprefixer = require('gulp-autoprefixer');
 var sass         = require('gulp-sass');
 var cssnano      = require('gulp-cssnano');
@@ -17,7 +18,6 @@ gulp.task('browser-sync', function() {
 	var files = [
 					'**/*.php',
           './js/*.js'
-					'**/*.{png,jpg,gif}'
 				];
 	browserSync.init(files, {
 
@@ -45,7 +45,7 @@ gulp.task('styles', function () {
     gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-    .pipe(cssnano())
+    // .pipe(cssnano())
     // .pipe(rename( {suffix: '.min'} ))
     .pipe(gulp.dest('./'))
 
