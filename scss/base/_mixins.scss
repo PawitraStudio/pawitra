@@ -23,3 +23,8 @@
   -webkit-box-shadow:none !important;
   -moz-box-shadow:none !important;
 }
+
+@mixin input {
+  font-family: $font-lato;
+  background-color: $color-input-bg;
+}
