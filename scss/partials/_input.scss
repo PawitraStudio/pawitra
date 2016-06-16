@@ -170,3 +170,12 @@ span {
     @extend .fa-user;
   }
 }
+
+.et_pb_signup_0 {
+  textarea {
+    font-family: $font-roboto;
+  }
+  input[type="text"]{
+    @extend textarea;
+  }
+}

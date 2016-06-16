@@ -167,18 +167,17 @@ body {}
     }
   }
 
-@media #{$phone-only} {
-  background-color: transparent;
-  .map-holder {
-    filter: $filter-url;
-    filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    opacity: 1 !important;
+.email-optin {
+  border-radius: 5px;
+  .fa {
+    position: relative;
+    top: 15px;
+  }
+
+  .desc {
+    padding: 10px 10px;
   }
 }
-
 
 /* Header */
 

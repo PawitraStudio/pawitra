@@ -137,16 +137,13 @@
     line-height: 1.5em;
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif; }
 
-@media all and (max-width: 767px) {
-  background-color: transparent;
-  .map-holder {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    opacity: 1 !important; } }
+.email-optin {
+  border-radius: 5px; }
+  .email-optin .fa {
+    position: relative;
+    top: 15px; }
+  .email-optin .desc {
+    padding: 10px 10px; }
 
 /* Header */
 /* Top Header */
@@ -284,6 +281,9 @@ span.wpcf7-radio span.wpcf7-list-item {
   top: 40px;
   font-size: 2em; }
 
+.et_pb_signup_0 textarea, .et_pb_signup_0 input[type="text"] {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif; }
+
 /* Footer */
 #main-footer {
   box-shadow: none !important;
@@ -311,3 +311,40 @@ span.wpcf7-radio span.wpcf7-list-item {
   .social-footer .fa-stack:hover .fa {
     transition: all 0.3s ease;
     color: #FFC107; }
+
+@media all and (max-width: 767px) {
+  background: transparent !important;
+  .map-holder {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    opacity: 1 !important; } }
+
+@media all and (max-width: 980px) {
+  .et_header_style_centered .logo_container {
+    display: none; }
+  .et_header_style_centered .mobile_nav {
+    background-color: transparent;
+    position: relative;
+    bottom: 25px;
+    right: 0; }
+    .et_header_style_centered .mobile_nav .select_page {
+      display: none; }
+  .et_header_style_split .mobile_nav .select_page {
+    display: none; }
+  .mobile_menu_bar:before {
+    font-size: 48px;
+    color: #ffffff; }
+  #main-header .et_mobile_menu, #main-header .nav li ul, #main-header .et-search-form {
+    background-color: rgba(69, 90, 100, 0.85) !important; }
+  #top-header #et-info, #top-header #et-secondary-menu {
+    text-align: left; }
+  #footer-bottom .container p {
+    font-size: 11px; }
+  .quote-cta {
+    bottom: 40px; }
+  .intern-cta {
+    top: 0; } }

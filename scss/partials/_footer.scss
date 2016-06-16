@@ -45,3 +45,92 @@
     }
   }
 }
+
+@media #{$phone-only} {
+  background: transparent !important;
+  .map-holder {
+    filter: $filter-url;
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    opacity: 1 !important;
+  }
+}
+
+@media #{$medium-breakpoint} {
+  .et_header_style_centered {
+    .logo_container {
+        display: none;
+    }
+
+    .mobile_nav {
+      background-color: transparent;
+      position: relative;
+      bottom: 25px;
+      right: 0;
+
+      .select_page {
+        display: none;
+      }
+    }
+  }
+
+  .et_header_style_split {
+    .mobile_nav {
+      .select_page{
+        display: none;
+      }
+    }
+  }
+
+  .mobile_menu_bar{
+    &:before {
+      font-size: 48px;
+      color: $color-text;
+    }
+  }
+
+  #main-header {
+    .et_mobile_menu {
+      background-color: $color-dark-opaque !important
+    }
+
+    .nav {
+      li {
+        ul{
+          @extend .et_mobile_menu;
+        }
+      }
+    }
+
+    .et-search-form {
+      @extend .et_mobile_menu;
+    }
+  }
+  #top-header {
+    #et-info {
+      text-align: left;
+    }
+    #et-secondary-menu {
+      @extend #et-info;
+    }
+  }
+
+  #footer-bottom {
+    .container {
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .quote-cta {
+    bottom: 40px;
+  }
+
+  .intern-cta {
+    top: 0;
+  }
+
+}
