@@ -28,3 +28,9 @@
   font-family: $font-lato;
   background-color: $color-input-bg;
 }
+
+@mixin newsletter_form {
+  position: relative;
+  top: 50px;
+  right: 10px;
+}
