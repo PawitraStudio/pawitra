@@ -7,10 +7,9 @@ var gulp         = require('gulp');
 
 var autoprefixer = require('gulp-autoprefixer');
 var sass         = require('gulp-sass');
-var cssnano      = require('gulp-cssnano');
 var rename       = require('gulp-rename');
+var notify       = require('gulp-notify');
 var watch        = require('gulp-watch');
-
 
 /*=== Browser Sync ===*/
 
@@ -43,12 +42,11 @@ gulp.task('browser-sync', function() {
 gulp.task('styles', function () {
 
     gulp.src('./scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-    // .pipe(cssnano())
-    // .pipe(rename( {suffix: '.min'} ))
-    .pipe(gulp.dest('./'))
+    .pipe(sass().on('error', notify.onError( {title: 'Gulp',
+    message: 'Error: <%= error.message %>'})))
+		.pipe(autoprefixer({ browsers: ['last 2 versions'] }))
 
+    .pipe(gulp.dest('./'))
 });
 
 /*=== Watch Styles ===*/
